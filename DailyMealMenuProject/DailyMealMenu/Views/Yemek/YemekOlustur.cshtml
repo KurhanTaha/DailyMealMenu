@@ -1,0 +1,244 @@
+﻿@model DailyMealMenu.Models.YeniYemekModel
+
+@{
+    ViewData["Title"] = "Yeni Yemek Oluştur";
+}
+
+<style>
+    :root {
+        --brand: #00008B;
+        --primary: #0b49ff;
+        --primary-dark: #0637c7;
+        --bg: #f4f6fb;
+    }
+
+    /* Sayfa zemini + blur arka plan */
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        background: var(--bg);
+        font-family: Arial, sans-serif;
+        position: relative; /* blur katmanı için referans */
+        min-height: 100vh;
+        z-index: 0;
+    }
+        /* Blur arka plan (yalnızca görsel) */
+        body::before {
+            content: "";
+            position: fixed; /* sayfa kayarken sabit kalsın */
+            inset: 0;
+            background: url('/images/yemekler.png') center/cover no-repeat;
+            filter: blur(10px);
+            transform: scale(1.06); /* blur kenarlarını gizlemek için hafif büyütme */
+            z-index: -1; /* tüm içerik üstte kalsın */
+            pointer-events: none;
+        }
+
+    /* Üst bar - GRID ile ortalama */
+    .nav {
+        background: var(--brand);
+        color: #fff;
+        padding: 12px 24px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr; /* sol - orta - sağ */
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        box-shadow: 0 6px 18px rgba(0,0,0,.08);
+        gap: 12px;
+    }
+
+    .nav-left {
+        justify-self: start;
+    }
+
+    .nav-title {
+        justify-self: center;
+        font-weight: 800;
+    }
+
+    .nav-right {
+        justify-self: end;
+    }
+
+    /* Nav link / buton */
+    .btn-nav {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255,255,255,.15);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,.35);
+        padding: 8px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: background .15s ease, transform .15s ease;
+    }
+
+        .btn-nav:hover {
+            background: rgba(255,255,255,.25);
+            transform: translateY(-1px);
+        }
+
+    /* Form alanı */
+    .form-container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: rgba(255,255,255,0.96); /* hafif şeffaf kart */
+        padding: 24px;
+        border-radius: 10px;
+        box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+        backdrop-filter: saturate(120%);
+        z-index: 1; /* blur katmanının üstünde */
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: var(--brand);
+        font-weight: 900;
+        letter-spacing: .2px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 12px;
+        display: block;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background: #fff;
+    }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(11, 73, 255, 0.15);
+        }
+
+    button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        background: var(--primary);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 10px 24px rgba(11,73,255,.22);
+        transition: transform .12s ease, filter .12s ease, background .12s ease;
+    }
+
+        button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            filter: brightness(.98);
+        }
+
+    /* Upload satırı */
+    .upload-row {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        margin-top: 8px;
+    }
+
+    .upload-frame {
+        width: 100%;
+        max-width: 420px;
+        height: 100px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    .upload-preview {
+        width: 140px;
+        height: 100px;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        display: none;
+        background: #f7f7f7;
+    }
+</style>
+
+<!-- Üst Menü -->
+<div class="nav">
+    <div class="nav-left">
+        <a href="/Yemek/YemekEkle" class="btn-nav">← Geri</a>
+    </div>
+    <div class="nav-title">Yeni Yemek Oluştur</div>
+    <div class="nav-right"><!-- gerekirse sağa buton eklenir --></div>
+</div>
+
+<!-- Form Alanı -->
+<div class="form-container">
+    <h2>Yeni Yemek Oluştur</h2>
+    <form method="post">
+        @Html.AntiForgeryToken()
+
+        <label>Kategori:</label>
+        <select asp-for="Kategori">
+            <option value="MainDish">Ana Yemek</option>
+            <option value="Starter">Başlangıç</option>
+            <option value="Salad">Salata</option>
+            <option value="Soup">Çorba</option>
+            <option value="Other">Diğer</option>
+            <option value="Dessert">Tatlı</option>
+        </select>
+
+        <label>Yemek Adı:</label>
+        <input asp-for="Name" />
+
+        <label>İçerik:</label>
+        <input asp-for="Ingredients" />
+
+        <label>Kalori Miktarı:</label>
+        <input asp-for="Kcal" />
+
+        <!-- Görsel Upload (iframe + önizleme) -->
+        <label>Görsel:</label>
+        <input type="hidden" asp-for="ImageUrl" id="ImageUrl" />
+        <div class="upload-row">
+            <iframe src="/Upload/Image?field=ImageUrl" class="upload-frame"></iframe>
+            <img id="imgPreview" class="upload-preview" alt="Önizleme" />
+        </div>
+
+        <button type="submit">Kaydet</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        // Upload iframe'inden gelen sonucu yakala
+        window.addEventListener("message", function(e){
+            const data = e.data || {};
+            if(!data) return;
+
+            if(data.ok === false){
+                alert(data.msg || "Yükleme hatası");
+                return;
+            }
+
+            if(data.ok && data.field === "ImageUrl" && data.url){
+                const input = document.getElementById("ImageUrl");
+                const img = document.getElementById("imgPreview");
+                input.value = data.url;
+                img.src = data.url;
+                img.style.display = "block";
+            }
+        });
+    </script>
+}

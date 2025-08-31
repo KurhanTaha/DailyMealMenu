@@ -1,0 +1,543 @@
+﻿@{
+    ViewData["Title"] = "Yemek Ekle";
+}
+
+<style>
+    :root {
+        --brand: #00008B;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --ring: rgba(0,0,139,.15);
+        --save: #22c55e;
+        --save-dark: #16a34a;
+    }
+
+    html, body {
+        height: 100%;
+        background: var(--bg);
+        color: var(--text);
+        /* blur arka plan için */
+        position: relative;
+        min-height: 100vh;
+        z-index: 0;
+    }
+
+        /* -------- SADECE ARKA PLAN BLUR -------- */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url('/images/meyve.png') center/cover no-repeat;
+            filter: blur(10px);
+            transform: scale(1.06);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+    /* Üst mavi bar */
+    .nav {
+        width: 100%;
+        height: 64px;
+        background: var(--brand);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+        box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    }
+
+    .nav-title {
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: .3px;
+    }
+
+    .nav-left, .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-nav {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #0b49ff;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 14px;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(11,73,255,.25);
+        cursor: pointer;
+    }
+
+        .btn-nav:hover {
+            filter: brightness(.95);
+        }
+
+    .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: transparent;
+        color: #fff;
+        border: 2px solid rgba(255,255,255,.6);
+        border-radius: 10px;
+        padding: 8px 12px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,.08);
+        }
+
+    /* Orta kart / form */
+    .page {
+        display: flex;
+        justify-content: center;
+        padding: 16px 16px 32px;
+    }
+
+    .card {
+        width: min(980px, 92vw);
+        background: var(--card);
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0,0,0,.08);
+        padding: 24px 22px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Satırlar */
+    .row {
+        display: grid;
+        grid-template-columns: 140px 1fr 1fr;
+        gap: 12px;
+        align-items: center;
+        padding: 8px 0;
+    }
+
+        .row + .row {
+            border-top: 1px dashed #e5e7eb;
+            padding-top: 16px;
+        }
+
+    label {
+        font-weight: 700;
+        color: var(--text);
+    }
+
+    .input, select {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        padding: 0 12px;
+        background: #fff;
+        outline: none;
+        transition: border .15s, box-shadow .15s;
+    }
+
+        .input:focus, select:focus {
+            border-color: var(--brand);
+            box-shadow: 0 0 0 4px var(--ring);
+        }
+
+    .controls {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .btn-save {
+        background: var(--save);
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 10px;
+        font-weight: 800;
+        box-shadow: 0 6px 16px rgba(34,197,94,.28);
+        cursor: pointer;
+    }
+
+        .btn-save:hover {
+            background: var(--save-dark);
+        }
+
+    #mesaj {
+        font-weight: 700;
+    }
+
+    .pdf-upload-bar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 18px 16px;
+    }
+
+    .pdf-upload-msg {
+        font-weight: 700;
+    }
+
+    @@media (max-width: 780px) {
+        .row
+
+    {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .nav-title {
+        font-size: 18px;
+    }
+
+    }
+</style>
+
+<!-- ÜST MAVİ BAR -->
+<header class="nav">
+    <div class="nav-left">
+        <a href="/" class="btn-nav">← Ana Sayfa</a>
+    </div>
+    <div class="nav-title">Günlük Menü Oluştur</div>
+    <div class="nav-right">
+        <a href="/Admin" class="btn-nav" style="background:#1f2937;">Yönetim</a>
+        <a href="/Yemek/YemekOlustur" class="btn-outline">➕ Yemek Oluştur</a>
+    </div>
+</header>
+
+<!-- 📄 Aylık Menü Ekle -->
+<div class="pdf-upload-bar">
+    <button id="btnUploadMonthly" type="button" class="btn-nav">📄 Aylık Menü Ekle</button>
+    <input id="monthlyPdfInput" type="file" accept=".pdf,application/pdf" style="display:none;" />
+    <span id="pdfUploadMsg" class="pdf-upload-msg"></span>
+    <form id="afForm" style="display:none;">
+        @Html.AntiForgeryToken()
+    </form>
+</div>
+
+<!-- ORTA KART / FORM -->
+<main class="page">
+    <section class="card">
+        <!-- Tarih -->
+        <div class="row" style="border:none; padding-top:0;">
+            <label for="tarihSelect">Tarih Seçiniz:</label>
+            <select id="tarihSelect" class="input" style="grid-column: span 2;"></select>
+        </div>
+
+        <!-- Yemek Satırları -->
+        <div id="yemekSatirlari" style="margin-top:8px;">
+            @for (int i = 0; i < 4; i++)
+            {
+                <div class="row">
+                    <label><strong>Yemek @((i + 1)):</strong></label>
+                    <select class="kategoriSelect input" data-index="@i">
+                        <option value="">-- Yemek Türü Seç --</option>
+                        <option value="soups">Çorba</option>
+                        <option value="mainDishes">Ana Yemek</option>
+                        <option value="desserts">Tatlı</option>
+                        <option value="salads">Salata</option>
+                        <option value="starters">Başlangıç</option>
+                        <option value="others">Diğer</option>
+                    </select>
+                    <select class="yemekSelect input" data-index="@i">
+                        <option value="">-- Önce Tür Seçin --</option>
+                    </select>
+                </div>
+            }
+        </div>
+
+        <!-- Kaydet -->
+        <div class="controls">
+            <button class="btn-save" onclick="menuyuKaydet()">Kaydet</button>
+            <div id="mesaj"></div>
+        </div>
+        <div class="nav-right">
+            <a href="/SavedMenus" class="btn-outline">📚 Menüler</a>
+        </div>
+    </section>
+</main>
+
+@section Scripts {
+    <script>
+        // ---- kategori isimlerini normalize et ----
+        function normalizeCategory(k) {
+            k = (k || "").toString().trim().toLowerCase();
+            switch (k) {
+                case "soups": case "soup": return "soups";
+
+                case "maindishes":
+                case "main dishes":
+                case "maindish":
+                case "main":
+                case "main_dishes":
+                case "ana yemek":
+                case "anayemek":
+                    return "mainDishes";
+
+                case "desserts": case "dessert": return "desserts";
+                case "salads":   case "salad":   return "salads";
+                case "starters": case "starter":
+                case "appetizer":               return "starters";
+                case "others":  case "other":
+                case "diger":   case "diğer":   return "others";
+                default: return k;
+            }
+        }
+
+        // ---- yardımcılar ----
+        async function selectOptionByText(selectEl, text) {
+            const opts = Array.from(selectEl.options);
+            const found = opts.find(o => o.text.trim().toLowerCase() === (text || "").trim().toLowerCase());
+            if (found) {
+                selectEl.value = found.value;
+                return true;
+            }
+            return false;
+        }
+
+        async function loadFoodsIntoSelect(kategori, yemekSelect) {
+            yemekSelect.innerHTML = '<option value="">-- Yükleniyor --</option>';
+            if (!kategori) {
+                yemekSelect.innerHTML = '<option value="">-- Önce Tür Seçin --</option>';
+                return;
+            }
+            try {
+                const res = await fetch(`/api/yemekler/${kategori}`);
+                const data = await res.json();
+                if (!Array.isArray(data)) throw new Error();
+
+                // MÜKERRER ÖNLE: Aynı id tekrar eklenmesin
+                const seen = new Set();
+                yemekSelect.innerHTML = '<option value="">-- Yemek Seçin --</option>';
+                data.forEach(y => {
+                    if (seen.has(y.id)) return;
+                    seen.add(y.id);
+                    const opt = document.createElement('option');
+                    opt.value = y.id;
+                    opt.textContent = y.name;
+                    yemekSelect.appendChild(opt);
+                });
+            } catch {
+                yemekSelect.innerHTML = '<option value="">Yemekler yüklenemedi</option>';
+            }
+        }
+
+        // ---- ŞABLON UYGULA ----
+              async function applyTemplateToForm(tid) {
+            try {
+                const res = await fetch(`/SavedMenus/Get?id=${tid}`);
+                if (!res.ok) return;
+                let { items } = await res.json();
+                if (!items || !items.length) return;
+
+                // 1) Kategorileri normalize et
+                items = items.map(it => ({
+                    ...it,
+                    kategori: normalizeCategory(it.kategori)
+                }));
+
+                // 2) Sıralama önceliği: Ana Yemek her zaman en üstte
+                const PRIO = {
+                    mainDishes: 0,  // Ana Yemek
+                    soups: 1,       // Çorba
+                    salads: 2,      // Salata
+                    starters: 3,    // Başlangıç
+                    desserts: 4,    // Tatlı
+                    others: 5       // Diğer
+                };
+                items.sort((a, b) => (PRIO[a.kategori] ?? 99) - (PRIO[b.kategori] ?? 99));
+
+                // 3) Maksimum 4 satırı doldur
+                for (let i = 0; i < 4; i++) {
+                    const it = items[i];
+                    const katSel = document.querySelector(`.kategoriSelect[data-index='${i}']`);
+                    const ymkSel = document.querySelector(`.yemekSelect[data-index='${i}']`);
+                    if (!katSel || !ymkSel) continue;
+
+                    // satır temizliği
+                    katSel.value = "";
+                    ymkSel.innerHTML = '<option value="">-- Önce Tür Seçin --</option>';
+
+                    if (!it) continue;
+
+                    // 3.a Kategori ata
+                    katSel.value = it.kategori;
+                    if (!Array.from(katSel.options).some(o => o.value === katSel.value)) {
+                        // uç bir durum: option yoksa güvenli fallback
+                        katSel.value = "mainDishes";
+                    }
+
+                    // 3.b O kategoriye ait yemekleri yükle
+                    await loadFoodsIntoSelect(katSel.value, ymkSel);
+
+                    // 3.c ID varsa ID ile; yoksa isimle seç
+                    let matched = false;
+                    if (it.catalogId) {
+                        ymkSel.value = String(it.catalogId);
+                        matched = (ymkSel.value === String(it.catalogId));
+                    }
+                    if (!matched && it.name) {
+                        await selectOptionByText(ymkSel, it.name);
+                    }
+                }
+
+                const m = document.getElementById("mesaj");
+                if (m) {
+                    m.style.color = "#0b7";
+                    m.textContent = "📚 Şablon uygulandı. Ana yemek en üste yerleştirildi. Tarihi seçip Kaydet’e basabilirsiniz.";
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        // Sayfa açılışında query param’dan uygula (varsa)
+        document.addEventListener("DOMContentLoaded", () => {
+            const p = new URLSearchParams(location.search);
+            const tid = p.get("fromTemplateId");
+            if (tid) applyTemplateToForm(tid);
+        });
+
+        // ---- Sayfa açılışları ----
+        document.addEventListener("DOMContentLoaded", function () {
+            // Tarih seçenekleri (60 gün)
+            const tarihSelect = document.getElementById("tarihSelect");
+            const today = new Date();
+            for (let i = 0; i < 60; i++) {
+                const d = new Date(); d.setDate(today.getDate() + i);
+                const yyyy = d.getFullYear();
+                const mm = String(d.getMonth() + 1).padStart(2, '0');
+                const dd = String(d.getDate()).padStart(2, '0');
+                const opt = document.createElement("option");
+                opt.value = `${yyyy}-${mm}-${dd}`;
+                opt.textContent = `${dd}.${mm}.${yyyy}`;
+                tarihSelect.appendChild(opt);
+            }
+
+            // Kategori değişince yemekleri getir
+            document.querySelectorAll(".kategoriSelect").forEach(select => {
+                select.addEventListener("change", async function () {
+                    const kategori = this.value;
+                    const index = this.getAttribute("data-index");
+                    const yemekSelect = document.querySelector(`.yemekSelect[data-index='${index}']`);
+                    await loadFoodsIntoSelect(kategori, yemekSelect);
+                });
+            });
+
+            // URL parametresinden şablon id gelirse uygula
+            const p = new URLSearchParams(location.search);
+            const tid = p.get("fromTemplateId");   // /Yemek/YemekEkle?fromTemplateId=123
+            if (tid) applyTemplateToForm(tid);
+        });
+
+        // ---- Menü Kaydet ----
+        async function menuyuKaydet() {
+            const tarih = document.getElementById("tarihSelect").value;
+            const secilenYemekler = [];
+
+            document.querySelectorAll(".yemekSelect").forEach(select => {
+                if (select.value) {
+                    secilenYemekler.push({
+                        yemekId: parseInt(select.value),
+                        kategori: document.querySelector(`.kategoriSelect[data-index='${select.dataset.index}']`).value
+                    });
+                }
+            });
+
+            if (!tarih) { alert("Lütfen bir tarih seçiniz."); return; }
+            if (secilenYemekler.length < 4) { alert("Lütfen 4 yemek seçiniz."); return; }
+
+            const mesajEl = document.getElementById("mesaj");
+            mesajEl.style.color = "#444";
+            mesajEl.textContent = "⏳ Kaydediliyor...";
+
+            try {
+                const res = await fetch('/Yemek/MenuKaydet', {
+                    method: 'POST',
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ tarih, yemekler: secilenYemekler })
+                });
+
+                let payload = {};
+                try { payload = await res.json(); } catch {}
+
+                if (res.ok && payload.success) {
+                    mesajEl.style.color = "green";
+                    mesajEl.textContent = payload.message || "✅ Menü başarıyla kaydedildi!";
+                } else {
+                    const msg = payload.message || "❌ Kayıt başarısız oldu.";
+                    mesajEl.style.color = "crimson";
+                    mesajEl.textContent = msg;
+                }
+            } catch (err) {
+                console.error(err);
+                mesajEl.style.color = "crimson";
+                mesajEl.textContent = "❌ Sunucuya ulaşılamadı.";
+            }
+        }
+
+        // ---- Aylık PDF yükleme butonu (gizli input ile) ----
+        (function () {
+            const btn = document.getElementById("btnUploadMonthly");
+            const input = document.getElementById("monthlyPdfInput");
+            const msg = document.getElementById("pdfUploadMsg");
+            if (!btn || !input || !msg) return;
+
+            btn.addEventListener("click", () => input.click());
+            input.addEventListener("change", async () => {
+                if (!input.files || input.files.length === 0) return;
+                const file = input.files[0];
+
+                if (file.type !== "application/pdf" && !file.name.toLowerCase().endsWith(".pdf")) {
+                    msg.style.color = "crimson";
+                    msg.textContent = "❌ Lütfen PDF dosyası seçin.";
+                    input.value = "";
+                    return;
+                }
+
+                const form = new FormData();
+                form.append("file", file);
+
+                const tokenInput = document.querySelector('#afForm input[name="__RequestVerificationToken"]');
+                if (tokenInput && tokenInput.value) {
+                    form.append("__RequestVerificationToken", tokenInput.value);
+                }
+
+                msg.style.color = "#444";
+                msg.textContent = "⏳ PDF yükleniyor...";
+
+                try {
+                    const res = await fetch("/Files/UploadMonthly", { method: "POST", body: form });
+                    if (res.ok) {
+                        msg.style.color = "green";
+                        msg.textContent = "✅ PDF başarıyla yüklendi.";
+                    } else {
+                        msg.style.color = "crimson";
+                        msg.textContent = "❌ PDF yükleme başarısız.";
+                    }
+                } catch (e) {
+                    console.error(e);
+                    msg.style.color = "crimson";
+                    msg.textContent = "❌ Sunucu hatası.";
+                } finally {
+                    input.value = "";
+                }
+            });
+        })();
+    </script>
+}

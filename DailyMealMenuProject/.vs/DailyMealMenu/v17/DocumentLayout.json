@@ -1,0 +1,936 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\yemeklerapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\yemeklerapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\starterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\starterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\soupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\soupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\saladscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\saladscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\otherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\otherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\maindishescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\maindishescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\dessertscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\dessertscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\soups\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\soups\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\meals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\meals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\savedmenus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\savedmenus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\salads\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\salads\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\yemek\\yemekekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\yemek\\yemekekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\yemekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\yemekcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\yemek\\yemekolustur.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\yemek\\yemekolustur.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\mealscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\mealscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\others\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\others\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\meals\\templates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\meals\\templates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\savedmenuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\savedmenuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\data\\mealsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\data\\mealsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\menutemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\menutemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\starters\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\starters\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\salads\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\salads\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\others\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\others\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\maindishes\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\maindishes\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\desserts\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\desserts\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\soups\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\soups\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\maindish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\maindish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\yeniyemekmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\yeniyemekmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\yemekmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\yemekmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\starter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\starter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\soup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\soup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\salad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\salad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\other.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\other.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\menukaydetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\menukaydetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\meallistitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\meallistitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\dessert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\dessert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\models\\dailymenudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\models\\dailymenudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\starters\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\starters\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\maindishes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\maindishes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\desserts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\desserts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\meals\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\meals\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\upload\\image.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\upload\\image.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\migrations\\20250808125555_makeallmealidsnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\migrations\\20250808125555_makeallmealidsnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|c:\\users\\bahar \u00F6zayabakan\\desktop\\yeni klas\u00F6r\\dailymealmenu\\dailymealmenu\\migrations\\20250818080037_makeimageurloptional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA4A4283-E655-4246-8CE8-765B67DF1289}|DailyMealMenu\\DailyMealMenu.csproj|solutionrelative:dailymealmenu\\migrations\\20250818080037_makeimageurloptional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MealsDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Data\\MealsDbContext.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Data\\MealsDbContext.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Data\\MealsDbContext.cs",
+              "RelativeToolTip": "DailyMealMenu\\Data\\MealsDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T12:38:56.788Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Program.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Program.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Program.cs",
+              "RelativeToolTip": "DailyMealMenu\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAYwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T08:44:35.636Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainDishesController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\MainDishesController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\MainDishesController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\MainDishesController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\MainDishesController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAQwMoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T06:31:14.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OthersController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\OthersController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\OthersController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\OthersController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\OthersController.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAQwMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T06:32:22.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaladsController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\SaladsController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\SaladsController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\SaladsController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\SaladsController.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAQwM4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T06:33:12.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartersController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\StartersController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\StartersController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\StartersController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\StartersController.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAQwMsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T06:33:50.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "YemeklerApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\YemeklerApiController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\YemeklerApiController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\YemeklerApiController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\YemeklerApiController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAYwFcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:59:06.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SoupsController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\SoupsController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\SoupsController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\SoupsController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\SoupsController.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAIwMIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T06:33:36.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DessertsController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\DessertsController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\DessertsController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\DessertsController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\DessertsController.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAIwMoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T06:31:49.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Soups\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Soups\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Soups\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Soups\\Index.cshtml",
+              "ViewState": "AgIAABMBAAAAAAAAAAAQwDUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T13:15:58.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Meals\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Meals\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Meals\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Meals\\Index.cshtml",
+              "ViewState": "AgIAALYAAAAAAAAAAAAUwMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T14:01:32.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Salads\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Salads\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Salads\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Salads\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T13:19:41.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\SavedMenus\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\SavedMenus\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\SavedMenus\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\SavedMenus\\Index.cshtml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAUwJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-20T08:41:55.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "YemekController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\YemekController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\YemekController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\YemekController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\YemekController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwDEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T07:50:14.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAKYCAAAAAAAAAAAUwLsCAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T12:24:31.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "YemekEkle.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Yemek\\YemekEkle.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Yemek\\YemekEkle.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Yemek\\YemekEkle.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Yemek\\YemekEkle.cshtml",
+              "ViewState": "AgIAADABAAAAAAAAAAAUwDoBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T07:59:54.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T13:28:44.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAYwMQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T12:53:26.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "YemekOlustur.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Yemek\\YemekOlustur.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Yemek\\YemekOlustur.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Yemek\\YemekOlustur.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Yemek\\YemekOlustur.cshtml",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAUwPQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T11:26:18.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MealsController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\MealsController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\MealsController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\MealsController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\MealsController.cs",
+              "ViewState": "AgIAABwCAAAAAAAAAAAUwC8CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T12:32:53.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T13:00:07.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Others\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Others\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Others\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Others\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T13:19:49.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MenuTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\MenuTemplate.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\MenuTemplate.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\MenuTemplate.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\MenuTemplate.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:55:32.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Templates.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Meals\\Templates.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Meals\\Templates.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Meals\\Templates.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Meals\\Templates.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-20T10:26:55.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SavedMenusController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\SavedMenusController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\SavedMenusController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\SavedMenusController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\SavedMenusController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T08:41:17.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Others\\Update.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Others\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Others\\Update.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Others\\Update.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T07:22:18.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Salads\\Update.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Salads\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Salads\\Update.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Salads\\Update.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T07:32:22.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Starters\\Update.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Starters\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Starters\\Update.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Starters\\Update.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T07:32:12.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\MainDishes\\Update.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\MainDishes\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\MainDishes\\Update.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\MainDishes\\Update.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAUwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T07:32:40.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T12:52:39.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FilesController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\FilesController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\FilesController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\FilesController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\FilesController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwCMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T14:09:21.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Desserts\\Update.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Desserts\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Desserts\\Update.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Desserts\\Update.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T07:32:32.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Soups\\Update.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Soups\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Soups\\Update.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Soups\\Update.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T13:13:07.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MainDish.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\MainDish.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\MainDish.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\MainDish.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\MainDish.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:55:33.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\UploadController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\UploadController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T12:55:13.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20250818080037_MakeImageUrlOptional.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Migrations\\20250818080037_MakeImageUrlOptional.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Migrations\\20250818080037_MakeImageUrlOptional.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Migrations\\20250818080037_MakeImageUrlOptional.cs",
+              "RelativeToolTip": "DailyMealMenu\\Migrations\\20250818080037_MakeImageUrlOptional.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T08:00:37.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "DailyMealMenu\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T13:03:24.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "YeniYemekModel.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\YeniYemekModel.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\YeniYemekModel.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\YeniYemekModel.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\YeniYemekModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T11:07:17.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "YemekModel.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\YemekModel.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\YemekModel.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\YemekModel.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\YemekModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T07:52:21.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Starter.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Starter.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\Starter.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Starter.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\Starter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:54:29.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Soup.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Soup.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\Soup.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Soup.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\Soup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:55:15.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Salad.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Salad.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\Salad.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Salad.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\Salad.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:40:51.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Other.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Other.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\Other.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Other.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\Other.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:55:25.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MenuKaydetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\MenuKaydetDto.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\MenuKaydetDto.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\MenuKaydetDto.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\MenuKaydetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T07:04:09.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "MealListItemVm.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\MealListItemVm.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\MealListItemVm.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\MealListItemVm.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\MealListItemVm.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T07:53:53.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Dessert.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Dessert.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\Dessert.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\Dessert.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\Dessert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:55:39.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DailyMenuDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\DailyMenuDto.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Models\\DailyMenuDto.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Models\\DailyMenuDto.cs",
+              "RelativeToolTip": "DailyMealMenu\\Models\\DailyMenuDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T07:27:45.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Starters\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Starters\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Starters\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Starters\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T13:19:02.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\MainDishes\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\MainDishes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\MainDishes\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\MainDishes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T13:19:57.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Desserts\\Index.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Desserts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Desserts\\Index.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Desserts\\Index.cshtml",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAAPMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T13:20:04.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Meals\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Meals\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Meals\\Delete.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Meals\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T07:56:38.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Image.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Upload\\Image.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Upload\\Image.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Upload\\Image.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Upload\\Image.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-11T12:56:47.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "DailyMealMenu\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "DailyMealMenu\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-15T06:47:16.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T13:02:48.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "DailyMealMenu\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAADwv3IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-11T13:29:12.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20250808125555_MakeAllMealIdsNullable.cs",
+              "DocumentMoniker": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Migrations\\20250808125555_MakeAllMealIdsNullable.cs",
+              "RelativeDocumentMoniker": "DailyMealMenu\\Migrations\\20250808125555_MakeAllMealIdsNullable.cs",
+              "ToolTip": "C:\\Users\\Bahar \u00D6ZAYABAKAN\\Desktop\\Yeni klas\u00F6r\\DailyMealMenu\\DailyMealMenu\\Migrations\\20250808125555_MakeAllMealIdsNullable.cs",
+              "RelativeToolTip": "DailyMealMenu\\Migrations\\20250808125555_MakeAllMealIdsNullable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:55:55.408Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

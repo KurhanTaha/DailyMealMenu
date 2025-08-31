@@ -1,0 +1,225 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DailyMealMenu
+build_property.RootNamespace = DailyMealMenu
+build_property.ProjectDir = C:\Users\Bahar ÖZAYABAKAN\Desktop\Yeni klasör\DailyMealMenu\DailyMealMenu\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Bahar ÖZAYABAKAN\Desktop\Yeni klasör\DailyMealMenu\DailyMealMenu
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Desserts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzc2VydHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Desserts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzc2VydHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Desserts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzc2VydHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Desserts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzc2VydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Desserts/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzc2VydHNcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/MainDishes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkRpc2hlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/MainDishes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkRpc2hlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/MainDishes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkRpc2hlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/MainDishes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkRpc2hlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/MainDishes/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkRpc2hlc1xVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Meals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Meals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Meals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Meals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Meals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Meals/Templates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVhbHNcVGVtcGxhdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Others/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Others/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Others/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Others/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Others/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3RoZXJzXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Salads/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYWRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Salads/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYWRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Salads/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYWRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Salads/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYWRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Salads/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsYWRzXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/SavedMenus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F2ZWRNZW51c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Soups/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Soups/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Soups/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Soups/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Soups/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU291cHNcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Starters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Starters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Starters/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Starters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Starters/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRlcnNcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Upload/Image.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXBsb2FkXEltYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Yemek/YemekEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWVtZWtcWWVtZWtFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Yemek/YemekOlustur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWVtZWtcWWVtZWtPbHVzdHVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bahar ÖZAYABAKAN/Desktop/Yeni klasör/DailyMealMenu/DailyMealMenu/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-p5zf5l1l4h

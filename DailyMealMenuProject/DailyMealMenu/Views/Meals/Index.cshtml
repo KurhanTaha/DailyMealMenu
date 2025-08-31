@@ -1,0 +1,204 @@
+﻿@model IEnumerable<DailyMealMenu.Models.MealListItemVm>
+@{
+    ViewData["Title"] = "Günlük Menüler";
+}
+
+<style>
+    :root {
+        --brand: #00008B; /* koyu mavi */
+        --brand-2: #0b49ff; /* vurgu */
+        --ink: #0f172a;
+        --muted: #6b7280;
+        --bg: #fafafa;
+        --card: #ffffff;
+        --line: #e5e7eb;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin: 6px 0 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+        h2::after {
+            content: "";
+            width: 52px;
+            height: 4px;
+            border-radius: 999px;
+            background: linear-gradient(90deg,var(--brand),var(--brand-2));
+        }
+
+    .meal-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 24px rgba(15,23,42,.06);
+    }
+
+        .meal-table thead th {
+            background: linear-gradient(0deg,#f7f9ff,#fff);
+            color: var(--brand);
+            font-weight: 800;
+            padding: .9rem .9rem;
+            border-bottom: 1px solid var(--line);
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .meal-table td {
+            padding: .85rem .9rem;
+            vertical-align: top;
+            border-bottom: 1px solid var(--line);
+            color: #1f2937;
+        }
+
+        .meal-table tbody tr:nth-child(even) {
+            background: #fbfbfd;
+        }
+
+        .meal-table tbody tr:hover {
+            background: #f2f6ff;
+        }
+
+    .cat {
+        font-weight: 800;
+        color: var(--brand);
+        margin-right: 8px;
+        white-space: nowrap;
+    }
+
+    .btn-secondary {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    /* Popup */
+    .popup {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #22c55e;
+        color: #fff;
+        padding: 12px 20px;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0,0,0,.2);
+        font-weight: 700;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all .4s ease;
+        z-index: 1000;
+    }
+
+        .popup.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+</style>
+
+<header style="background-color:#00008B; color:white; padding:15px 25px; display:flex; align-items:center; justify-content:space-between;">
+    <h1 style="margin:0; font-size:1.4rem;">Günlük Menüler</h1>
+    <nav>
+        <a href="/" style="color:white; margin-left:15px; text-decoration:none;">Ana Sayfa</a>
+    </nav>
+</header>
+
+<div style="margin-bottom:15px;">
+    <a class="btn btn-secondary" asp-controller="Admin" asp-action="Index">⬅ Geri Dön</a>
+</div>
+
+<table class="meal-table">
+    <thead>
+        <tr>
+            <th style="width:160px;">Tarih</th>
+            <th>Menü</th>
+            <th style="width:140px;">İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td>@m.Date.ToString("dd.MM.yyyy")</td>
+                <td>
+                    @if (m.Soups?.Any() == true)
+                    {
+                        <div><span class="cat">Çorba:</span> @string.Join(", ", m.Soups)</div>
+                    }
+                    @if (m.MainDishes?.Any() == true)
+                    {
+                        <div><span class="cat">Ana Yemek:</span> @string.Join(", ", m.MainDishes)</div>
+                    }
+                    @if (m.Salads?.Any() == true)
+                    {
+                        <div><span class="cat">Salata:</span> @string.Join(", ", m.Salads)</div>
+                    }
+                    @if (m.Starters?.Any() == true)
+                    {
+                        <div><span class="cat">Başlangıç:</span> @string.Join(", ", m.Starters)</div>
+                    }
+                    @if (m.Desserts?.Any() == true)
+                    {
+                        <div><span class="cat">Tatlı:</span> @string.Join(", ", m.Desserts)</div>
+                    }
+                    @if (m.Others?.Any() == true)
+                    {
+                        <div><span class="cat">Diğer:</span> @string.Join(", ", m.Others)</div>
+                    }
+                    @if (!(m.Soups?.Any() == true || m.MainDishes?.Any() == true || m.Desserts?.Any() == true || m.Salads?.Any() == true || m.Starters?.Any() == true || m.Others?.Any() == true))
+                    {
+                        <div>-</div>
+                    }
+                </td>
+                <td class="row-actions">
+                    <form class="save-form" asp-action="SaveAsTemplate" asp-controller="Meals" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@m.Id" />
+                        <button type="submit" class="btn btn-sm btn-outline-primary">Menü Kaydet</button>
+                    </form>
+
+                    <a asp-action="Delete" asp-route-id="@m.Id"
+                       style="color: white; background-color: #b91c1c; padding: 0.25rem 0.5rem; border-radius: 0.25rem; text-decoration: none; display: inline-block; margin-left:6px;">
+                        Sil
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Popup -->
+<div id="popup" class="popup">✅ Menü kaydedildi!</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const popup = document.getElementById("popup");
+
+            document.querySelectorAll(".save-form").forEach(form => {
+                form.addEventListener("submit", async function (e) {
+                    e.preventDefault();
+
+                    const formData = new FormData(this);
+                    const res = await fetch(this.action, {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    if (res.ok) {
+                        popup.classList.add("show");
+                        setTimeout(() => popup.classList.remove("show"), 2500);
+                    } else {
+                        alert("❌ Menü kaydedilemedi.");
+                    }
+                });
+            });
+        });
+    </script>
+}

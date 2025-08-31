@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "DailyMealMenu.Controllers.YemeklerApiController",
+    "Method": "GetByCategory",
+    "RelativePath": "api/yemekler/{kategori}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kategori",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

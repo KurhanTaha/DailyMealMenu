@@ -1,0 +1,77 @@
+﻿@model DailyMealMenu.Models.Soup
+@{
+    ViewData["Title"] = "Çorba Düzenle";
+}
+
+<h2>Çorba Düzenle</h2>
+<hr />
+
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Ingredients" class="form-label"></label>
+        <input asp-for="Ingredients" class="form-control" />
+        <span asp-validation-for="Ingredients" class="text-danger"></span>
+    </div>
+
+    <div class="row g-3 mb-2">
+        <div class="col-sm-6">
+            <label asp-for="Kcal" class="form-label"></label>
+            <input asp-for="Kcal" class="form-control" />
+            <span asp-validation-for="Kcal" class="text-danger"></span>
+        </div>
+        <div class="col-sm-6 d-flex align-items-end">
+            <div class="form-check">
+                <input asp-for="IsActive" class="form-check-input" />
+                <label asp-for="IsActive" class="form-check-label"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mevcut görsel -->
+    <div class="mb-2">
+        <label class="form-label">Mevcut Görsel</label>
+        <div>
+            @if (!string.IsNullOrWhiteSpace(Model.ImageUrl))
+            {
+                <img src="@Model.ImageUrl" alt="Mevcut görsel" style="max-height:140px; border:1px solid #eee; padding:4px; border-radius:8px;" />
+            }
+            else
+            {
+                <div style="color:#888">Bu yemek için görsel eklenmemiş.</div>
+            }
+        </div>
+    </div>
+
+    <!-- Yeni görsel yükle -->
+    <div class="mb-3">
+        <label class="form-label">Yeni Görsel Yükle</label>
+        <input type="file" name="image" accept="image/*" class="form-control" />
+        <div class="form-text">Seçerseniz kaydettiğinizde mevcut görselin yerine geçer.</div>
+    </div>
+
+    <!-- Resmi kaldır -->
+    <div class="mb-3 form-check">
+        <input type="checkbox" name="removeImage" id="removeImage" class="form-check-input" />
+        <label for="removeImage" class="form-check-label">Mevcut resmi kaldır</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary">Vazgeç</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

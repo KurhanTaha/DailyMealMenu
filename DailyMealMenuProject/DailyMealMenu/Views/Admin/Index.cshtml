@@ -1,0 +1,196 @@
+﻿@{
+    ViewData["Title"] = "Yemek Yönetimi";
+}
+
+<style>
+    :root {
+        --brand: #00008B;
+        --muted: #6b7280;
+    }
+
+    .admin-header {
+        height: 72px;
+        background: var(--brand);
+        color: #fff;
+        /* full-bleed */
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        /* grid: sol (geri), orta (başlık), sağ (aksiyonlar) */
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        padding: 0 24px;
+        box-sizing: border-box;
+        margin-bottom: 24px;
+    }
+
+        .admin-header .hdr-left {
+            justify-self: start;
+        }
+
+        .admin-header .hdr-title {
+            justify-self: center;
+            margin: 0;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .admin-header .hdr-right {
+            justify-self: end;
+            display: flex;
+            gap: 10px;
+        }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 12px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid #fff;
+        color: #fff;
+        transition: transform .15s ease, background .15s ease;
+    }
+
+        .btn:hover {
+            background: rgba(255,255,255,.15);
+            transform: translateY(-1px);
+        }
+
+    .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 16px 32px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
+        gap: 16px;
+    }
+
+    .card {
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 16px;
+        background: #fff;
+        box-shadow: 0 6px 20px rgba(0,0,0,.06);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+        .card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14px;
+            min-height: 40px;
+        }
+
+    .row-actions {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+        flex-wrap: wrap;
+    }
+
+    .link {
+        border: 1px solid var(--brand);
+        color: var(--brand);
+        padding: 8px 10px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: background .15s ease, color .15s ease, transform .15s ease;
+    }
+
+        .link:hover {
+            background: var(--brand);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+</style>
+
+<div class="admin-header">
+    <div class="hdr-left">
+        <!-- SOL ÜST: GERİ (YemekEkle sayfasına) -->
+        <a class="btn" href="/Yemek/YemekEkle">← Geri</a>
+    </div>
+
+    <!-- ORTA: BAŞLIK -->
+    <h2 class="hdr-title">Yemek Yönetimi</h2>
+
+    <div class="hdr-right">
+        <!-- SAĞ: Kısayollar -->
+        <a class="btn" href="/">Ana Sayfa</a>
+        <a class="btn" href="/Yemek/YemekOlustur">➕ Yeni Yemek Oluştur</a>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="grid">
+        <div class="card">
+            <h3>Çorbalar</h3>
+            <p>Çorba kayıtlarını görüntüle, düzenle veya sil.</p>
+            <div class="row-actions">
+                <a class="link" href="/Soups">Listele / Yönet</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Ana Yemekler</h3>
+            <p>Ana yemek kayıtlarını yönet.</p>
+            <div class="row-actions">
+                <a class="link" href="/MainDishes">Listele / Yönet</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Salatalar</h3>
+            <p>Salata kayıtlarını yönet.</p>
+            <div class="row-actions">
+                <a class="link" href="/Salads">Listele / Yönet</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Başlangıçlar</h3>
+            <p>Başlangıç kayıtlarını yönet.</p>
+            <div class="row-actions">
+                <a class="link" href="/Starters">Listele / Yönet</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Tatlılar</h3>
+            <p>Tatlı kayıtlarını yönet.</p>
+            <div class="row-actions">
+                <a class="link" href="/Desserts">Listele / Yönet</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Diğer</h3>
+            <p>Diğer yemek kayıtlarını yönet.</p>
+            <div class="row-actions">
+                <a class="link" href="/Others">Listele / Yönet</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Günlük Menüler</h3>
+            <p>Oluşturulmuş günlük menüleri görüntüle veya sil.</p>
+            <div class="row-actions">
+                <a class="link" href="/Meals">Listele / Yönet</a>
+            </div>
+        </div>
+    </div>
+</div>

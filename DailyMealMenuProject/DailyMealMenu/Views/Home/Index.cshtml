@@ -1,0 +1,856 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+    var bugun = DateTime.Now.ToString("dd.MM.yyyy");
+    var bugunQuery = DateTime.Now.ToString("yyyy-MM-dd"); // AJAX için uyumlu format
+}
+@{
+    var ayIsimleri = new[] { "", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık" };
+    var mevcutAy = ayIsimleri[DateTime.Now.Month];
+}
+
+<style>
+    /* ============== GENEL ============== */
+    :root {
+        --brand: #00008B; /* koyu mavi */
+        --brand-2: #0b49ff; /* vurgu mavisi */
+        --ink: #0f172a; /* yazı rengi */
+        --muted: #6b7280; /* ikincil yazı */
+        --bg: #fafafa; /* açık gri arka plan */
+        --card: #ffffff; /* kart arka planı */
+        --line: #e5e7eb; /* çizgi */
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+    }
+
+    body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: Inter, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* blur arka plan için */
+        position: relative;
+        min-height: 100vh;
+        z-index: 0;
+    }
+
+        /* -------- SADECE ARKA PLAN BLUR -------- */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: url('/images/yemekhane.png') center/cover no-repeat;
+            filter: blur(10px);
+            transform: scale(1.06);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+    /* ============== HEADER ============== */
+    header {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        height: 80px;
+        background: var(--brand);
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        font-weight: 700;
+        letter-spacing: .2px;
+        margin-bottom: 90px;
+    }
+
+    .header-left, .header-center, .header-right {
+        flex: 1;
+    }
+
+    .header-center {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+
+    header .logo {
+        height: 30px;
+        width: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .pdf-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #fff;
+        color: var(--brand);
+        border: 1px solid var(--brand);
+        padding: 6px 12px;
+        height: 32px;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all .15s ease;
+    }
+
+        .pdf-button:hover {
+            background: #f1f5ff;
+            transform: translateY(-1px);
+        }
+
+    .user-avatar {
+        width: 36px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid rgba(255,255,255,.4);
+    }
+
+    /* ============== LAYOUT ============== */
+    .main-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 8px 16px 40px;
+    }
+
+    .side-box {
+        width: 15%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ============== ORTA KART / TABLO ============== */
+    .meal-table {
+        width: 70%;
+        text-align: center;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.06);
+        padding: 18px 18px 22px;
+    }
+
+        .meal-table h3 {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: .3px;
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+    .meal-slider {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .meal-slide {
+        transition: transform .45s ease, opacity .45s ease;
+        will-change: transform,opacity;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    thead th {
+        background: var(--brand);
+        color: #fff;
+        padding: 12px 10px;
+        font-size: 14px;
+        letter-spacing: .3px;
+    }
+
+    tbody td {
+        padding: 12px 10px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    /* alternating rows */
+    #meal-table tbody tr {
+        background-color: #ffffff;
+    }
+
+        #meal-table tbody tr:nth-child(odd) {
+            background-color: #B9E6D3;
+        }
+
+        #meal-table tbody tr:nth-child(even) {
+            background-color: #fff4e6;
+        }
+
+        #meal-table tbody tr:hover {
+            background-color: #d4e3ff !important;
+        }
+
+    #meal-table tbody td {
+        color: #333333;
+    }
+
+    .details-btn {
+        margin-top: 14px;
+    }
+
+        .details-btn button {
+            background: var(--brand);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            box-shadow: 0 6px 16px rgba(0,0,0,.08);
+        }
+
+            .details-btn button:hover {
+                background: var(--brand-2);
+                transform: translateY(-1px);
+            }
+
+    /* ============== OKLAR ============== */
+    .nav-arrow {
+        width: 44px;
+        height: 44px;
+        background: var(--brand);
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        user-select: none;
+    }
+
+        .nav-arrow:hover {
+            background: var(--brand-2);
+            transform: scale(1.08);
+        }
+
+    /* ============== SAAT KUTUSU ============== */
+    .sag_footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: 16px;
+        background: transparent;
+    }
+
+    .sol_footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 10px 16px;
+        background: transparent;
+    }
+
+    .saat-kutusu {
+        width: 280px;
+        min-height: 160px;
+        background: rgba(255,255,255,0.88);
+        border: 1px solid rgba(0,0,139,0.15);
+        border-radius: 16px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 10px 24px rgba(2,6,23,.15);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 16px;
+        text-align: center;
+        transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+        .saat-kutusu:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 32px rgba(2,6,23,.18);
+        }
+
+    .saat-baslik {
+        color: var(--brand);
+        font-weight: 900;
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    /* ============== DETAY MODAL ============== */
+    .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.45);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+    }
+
+    .modal-box {
+        width: min(900px,92vw);
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 16px 40px rgba(0,0,0,.25);
+        overflow: hidden;
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        background: var(--brand);
+        color: #fff;
+        font-weight: 800;
+    }
+
+    .modal-close {
+        background: transparent;
+        border: 0;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .modal-body {
+        padding: 14px 16px;
+        max-height: 70vh;
+        overflow: auto;
+    }
+
+    .detail-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .detail-table th, .detail-table td {
+            border: 1px solid var(--brand);
+            padding: 8px;
+            vertical-align: top;
+        }
+
+    /* Görsel modal */
+    .img-btn {
+        padding: 6px 10px;
+        border: 1px solid var(--brand);
+        background: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+
+        .img-btn:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+
+    .img-modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.45);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 2100;
+    }
+
+    .img-modal-box {
+        width: min(720px,94vw);
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .img-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 14px;
+        background: var(--brand);
+        color: #fff;
+        font-weight: 800;
+    }
+
+    .img-modal-close {
+        background: transparent;
+        border: 0;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .img-modal-body {
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+    }
+
+        .img-modal-body img {
+            max-width: 100%;
+            max-height: 70vh;
+            display: block;
+        }
+
+    /* SLIDE animasyon sınıfları */
+    .leaving-left {
+        transform: translateX(-60%);
+        opacity: 0;
+    }
+
+    .leaving-right {
+        transform: translateX(60%);
+        opacity: 0;
+    }
+
+    .enter-from-left {
+        transform: translateX(-60%);
+        opacity: 0;
+    }
+
+    .enter-from-right {
+        transform: translateX(60%);
+        opacity: 0;
+    }
+
+    .enter-to-center {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    /* === Hover tooltip (resim + içerik) === */
+    .meal-preview {
+        position: fixed;
+        z-index: 3000;
+        display: none;
+        width: 320px;
+        max-width: 80vw;
+        background: rgba(255,255,255,0.96);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(0,0,139,.18);
+        border-radius: 12px;
+        box-shadow: 0 16px 40px rgba(2,6,23,.22);
+        overflow: hidden;
+        pointer-events: none; /* tıklamalar satıra gitsin */
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity .18s ease, transform .18s ease;
+    }
+
+        .meal-preview.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .meal-preview img {
+            display: block;
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            background: #f2f2f2;
+        }
+
+        .meal-preview .mp-body {
+            padding: 10px 12px;
+            font-size: 13px;
+            color: #111827;
+            line-height: 1.35;
+            max-height: 160px;
+            overflow: auto;
+        }
+
+            .meal-preview .mp-body .mp-title {
+                font-weight: 800;
+                margin-bottom: 6px;
+                color: var(--brand);
+            }
+</style>
+
+<header>
+    <div class="header-left">
+        <img src="/images/calik1.png" alt="Çalık Denim" class="logo">
+    </div>
+    <div class="header-center">@mevcutAy Ayı Yemek Listesi</div>
+    <div class="header-right">
+        <a class="pdf-button" href="/Files/Monthly" download>📄 PDF indir</a>
+        <img src="/images/user.png"
+             alt="User"
+             class="user-avatar"
+             onclick="window.location.href='/Yemek/YemekEkle'">
+
+    </div>
+</header>
+
+<div class="main-content">
+    <div class="side-box">
+        <div id="prevDay" class="nav-arrow" style="margin-top: 150px;">&#8592;</div>
+    </div>
+
+    <div class="meal-table">
+        <h3>@bugun</h3>
+        <div class="meal-slider">
+            <div id="meal-slide" class="meal-slide enter-to-center">
+                <table id="meal-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 80%;">Günün Yemeği</th>
+                            <th style="width: 20%;">Kalori</th>
+                        </tr>
+                    </thead>
+                    <tbody id="meal-body">
+                        <tr><td colspan="2">Yükleniyor...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="details-btn">
+            <button type="button">Detaylar</button>
+        </div>
+    </div>
+
+    <div class="side-box">
+        <div id="nextDay" class="nav-arrow" style="margin-top: 150px;">&#8594;</div>
+    </div>
+</div>
+
+<footer class="sol_footer">
+    <div>© Copyright - Çalık Denim</div>
+</footer>
+<footer class="sag_footer">
+    <div class="saat-kutusu">
+        <div class="saat-baslik">Yemek Saatleri</div>
+        <div>10.30–13.00</div>
+        <div>18.00–19.30</div>
+        <div>02.00–03.30</div>
+    </div>
+</footer>
+
+<!-- Detaylar Modal -->
+<div id="detailModal" class="modal-overlay">
+    <div class="modal-box">
+        <div class="modal-header">
+            <span>Günün Detayları</span>
+            <button id="modalClose" class="modal-close">✖</button>
+        </div>
+        <div class="modal-body">
+            <table class="detail-table">
+                <thead>
+                    <tr>
+                        <th style="width:18%">Kategori</th>
+        <th style="width:24%">Yemek</th>
+        <th style="width:38%">İçindekiler</th>
+        <th style="width:10%">Kalori</th>
+        <th style="width:10%">Görsel</th>
+                    </tr>
+                </thead>
+                <tbody id="detailBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Hover tooltip (tek kopya) -->
+<div id="mealPreview" class="meal-preview" role="tooltip" aria-hidden="true">
+    <img id="mpImg" alt="Yemek görseli" />
+    <div class="mp-body">
+        <div class="mp-title" id="mpTitle"></div>
+        <div id="mpText"></div>
+    </div>
+</div>
+
+<!-- Görsel Modal -->
+<div id="imgModal" class="img-modal-overlay">
+    <div class="img-modal-box">
+        <div class="img-modal-header">
+            <span>Yemek Görseli</span>
+            <button id="imgModalClose" class="img-modal-close">✖</button>
+        </div>
+        <div class="img-modal-body">
+            <img id="imgModalImg" alt="Yemek Görseli" />
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+                let currentDate = new Date("@bugunQuery");
+                let lastMealData = null;
+
+                // HTML güvenli
+                function esc(s){
+                    return (s ?? "").toString()
+                        .replace(/&/g,"&amp;").replace(/</g,"&lt;")
+                        .replace(/>/g,"&gt;").replace(/"/g,"&quot;")
+                        .replace(/'/g,"&#39;");
+                }
+
+                // Satırlara resim ve içerik data-* olarak yazıyoruz (tooltip buradan okuyacak)
+                function buildRowsForMainTable(meal){
+                    const items = [];
+                    const push = g => {
+                        g?.forEach(x => {
+                            const title = esc(x.name);
+                            const kcal = x.kcal ?? 0;
+                            const img = encodeURIComponent(x.imageUrl || "");
+                            const ing = encodeURIComponent(x.ingredients || "");
+                            items.push(
+        `<tr class="meal-row" data-img="${img}" data-ing="${ing}" data-title="${title}">
+            <td>${title}</td>
+            <td>${kcal} kcal</td>
+        </tr>`
+                            );
+                        });
+                    };
+                    push(meal.soups); push(meal.mainDishes); push(meal.desserts);
+                    push(meal.salads); push(meal.starters); push(meal.others);
+                    return items;
+                }
+
+                async function loadMenu(dateObj) {
+                    const yyyy = dateObj.getFullYear();
+                    const mm = String(dateObj.getMonth()+1).padStart(2,'0');
+                    const dd = String(dateObj.getDate()).padStart(2,'0');
+                    const queryDate = `${yyyy}-${mm}-${dd}`;
+                    const displayDate = `${dd}.${mm}.${yyyy}`;
+
+                    document.querySelector(".meal-table h3").textContent = displayDate;
+
+                    const tbody = document.getElementById("meal-body");
+                    const res = await fetch(`/api/meals/by-date?date=${queryDate}`);
+
+                    if(!res.ok){
+                        lastMealData = null;
+                        tbody.innerHTML = "<tr><td colspan='2'>Bu tarihte menü bulunamadı.</td></tr>";
+                        return;
+                    }
+
+                    const meal = await res.json();
+                    lastMealData = meal;
+                    const rows = buildRowsForMainTable(meal);
+                    tbody.innerHTML = rows.length ? rows.join("") : "<tr><td colspan='2'>Veri bulunamadı.</td></tr>";
+                }
+
+                // SLIDE + FADE
+                async function slideAndLoad(direction) {
+                    const slideEl = document.getElementById("meal-slide");
+                    slideEl.classList.remove("enter-from-left","enter-from-right","enter-to-center");
+                    slideEl.classList.add(direction === "left" ? "leaving-left" : "leaving-right");
+
+                    setTimeout(async () => {
+                        if (direction === "left") currentDate.setDate(currentDate.getDate() - 1);
+                        else                      currentDate.setDate(currentDate.getDate() + 1);
+
+                        await loadMenu(currentDate);
+
+                        slideEl.classList.remove("leaving-left","leaving-right");
+                        slideEl.classList.add(direction === "left" ? "enter-from-right" : "enter-from-left");
+
+                        requestAnimationFrame(() => {
+                            slideEl.classList.add("enter-to-center");
+                            setTimeout(() => {
+                                slideEl.classList.remove("enter-from-right","enter-from-left");
+                            }, 20);
+                        });
+                    }, 450);
+                }
+
+                function openDetailsModal(){
+                    if(!lastMealData){ alert("Bu tarihe ait menü bulunamadı."); return; }
+                    const body = document.getElementById("detailBody");
+                    const add = (katAdi, arr) => {
+                        arr?.forEach(x => {
+                            body.insertAdjacentHTML("beforeend",
+                                `<tr>
+                                    <td><b>${esc(katAdi)}</b></td>
+                                    <td>${esc(x.name)}</td>
+                                    <td>${esc(x.ingredients || "-")}</td>
+                                    <td>${(x.kcal ?? x.Kcal ?? "-")}</td>
+                                    <td>
+                                        <button class="img-btn" data-url="${esc(x.imageUrl || '')}" ${x.imageUrl ? "" : "disabled"}>
+                                            Görsel
+                                        </button>
+                                    </td>
+                                </tr>`);
+                        });
+                    };
+                    body.innerHTML = "";
+                    add("Çorba",       lastMealData.soups);
+                    add("Ana Yemek",   lastMealData.mainDishes);
+                    add("Tatlı",       lastMealData.desserts);
+                    add("Salata",      lastMealData.salads);
+                    add("Başlangıç",   lastMealData.starters);
+                    add("Diğer",       lastMealData.others);
+                    document.getElementById("detailModal").style.display = "flex";
+                }
+                function closeDetailsModal(){ document.getElementById("detailModal").style.display = "none"; }
+
+                // === Hover tooltip: 500ms gecikme + yumuşak animasyon ===
+                (function attachHoverPreview(){
+                    const tbody = document.getElementById("meal-body");
+                    const tip = document.getElementById("mealPreview");
+                    const imgEl = document.getElementById("mpImg");
+                    const textEl = document.getElementById("mpText");
+                    const titleEl = document.getElementById("mpTitle");
+
+                    if(!tbody || !tip) return;
+
+                    let hoverTimer = null;
+                    let currentRow = null;
+                    let tipVisible = false;
+
+                    function hideTip(){
+                        tipVisible = false;
+                        tip.classList.remove("visible");
+                        tip.style.display = "none";
+                        tip.setAttribute("aria-hidden","true");
+                        imgEl.src = "";
+                        imgEl.style.display = "none";
+                        titleEl.textContent = "";
+                        textEl.textContent = "";
+                    }
+
+                    function positionTip(mouseX, mouseY){
+                        const pad = 12;
+                        const tipW = tip.offsetWidth || 320;
+                        const tipH = tip.offsetHeight || 260;
+                        let left = mouseX + 18;
+                        let top  = mouseY + 18;
+
+                        const vw = window.innerWidth;
+                        const vh = window.innerHeight;
+
+                        if (left + tipW + pad > vw) left = mouseX - tipW - 18;
+                        if (top + tipH + pad > vh) top = mouseY - tipH - 18;
+                        if (left < pad) left = pad;
+                        if (top < pad) top = pad;
+
+                        tip.style.left = left + "px";
+                        tip.style.top  = top  + "px";
+                    }
+
+                    function showTipForRow(tr, mouseX, mouseY){
+                        const rawImg = decodeURIComponent(tr.dataset.img || "");
+                        const rawIng = decodeURIComponent(tr.dataset.ing || "");
+                        const title  = tr.dataset.title || "Yemek";
+
+                        titleEl.textContent = title;
+                        textEl.textContent = rawIng || "İçerik bilgisi yok.";
+
+                        if (rawImg) {
+                            imgEl.src = rawImg;
+                            imgEl.style.display = "block";
+                        } else {
+                            imgEl.removeAttribute("src");
+                            imgEl.style.display = "none";
+                        }
+
+                        tip.style.display = "block";
+                        positionTip(mouseX, mouseY);
+
+                        // küçük bir raf sonra görünür sınıfı ekle (yumuşak giriş)
+                        requestAnimationFrame(() => {
+                            tipVisible = true;
+                            tip.classList.add("visible");
+                            tip.setAttribute("aria-hidden","false");
+                        });
+                    }
+
+                    tbody.addEventListener("mousemove", (e) => {
+                        const tr = e.target.closest(".meal-row");
+
+                        // Satır dışına çıktıysa her şeyi kapat
+                        if (!tr) {
+                            currentRow = null;
+                            clearTimeout(hoverTimer);
+                            hoverTimer = null;
+                            hideTip();
+                            return;
+                        }
+
+                        // Farklı bir satıra geçtiysek: timer reset
+                        if (currentRow !== tr) {
+                            currentRow = tr;
+                            clearTimeout(hoverTimer);
+                            hoverTimer = setTimeout(() => {
+                                showTipForRow(tr, e.clientX, e.clientY);
+                            }, 500); // 0.5 sn bekle
+                            hideTip();
+                            return;
+                        }
+
+                        // Aynı satırda ve tooltip açıkken pozisyonu güncelle
+                        if (tipVisible) {
+                            positionTip(e.clientX, e.clientY);
+                        }
+                    });
+
+                    tbody.addEventListener("mouseleave", () => {
+                        currentRow = null;
+                        clearTimeout(hoverTimer);
+                        hoverTimer = null;
+                        hideTip();
+                    });
+                })();
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    loadMenu(currentDate);
+
+                    document.getElementById("prevDay").addEventListener("click", () => slideAndLoad("left"));
+                    document.getElementById("nextDay").addEventListener("click", () => slideAndLoad("right"));
+
+                    document.querySelector(".details-btn button").addEventListener("click", openDetailsModal);
+                    document.getElementById("modalClose").addEventListener("click", closeDetailsModal);
+                    document.getElementById("detailModal").addEventListener("click", (e)=> {
+                        if(e.target.id === "detailModal") closeDetailsModal();
+                    });
+
+                    // Görsel modal
+                    document.getElementById("detailBody").addEventListener("click", function(e){
+                        const btn = e.target.closest(".img-btn");
+                        if(!btn) return;
+                        const url = btn.dataset.url;
+                        if(!url){ alert("Bu yemek için görsel bulunamadı."); return; }
+                        document.getElementById("imgModalImg").src = url;
+                        document.getElementById("imgModal").style.display = "flex";
+                    });
+                    document.getElementById("imgModalClose").addEventListener("click", ()=> {
+                        document.getElementById("imgModal").style.display = "none";
+                        document.getElementById("imgModalImg").src = "";
+                    });
+                    document.getElementById("imgModal").addEventListener("click", (e)=> {
+                        if(e.target.id === "imgModal"){
+                            document.getElementById("imgModal").style.display = "none";
+                            document.getElementById("imgModalImg").src = "";
+                        }
+                    });
+                });
+    </script>
+}

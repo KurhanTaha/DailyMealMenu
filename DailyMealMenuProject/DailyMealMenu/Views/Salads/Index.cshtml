@@ -1,0 +1,310 @@
+﻿@model IEnumerable<DailyMealMenu.Models.Salad>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header style="background-color:#00008B; color:white; padding:15px 25px; display:flex; align-items:center; justify-content:space-between;">
+    <h1 style="margin:0; font-size:1.4rem;">Salatalar</h1>
+    <nav>
+        <a href="/" style="color:white; margin-left:15px; text-decoration:none;">Ana Sayfa</a>
+    </nav>
+</header>
+<div style="margin-bottom:15px;">
+    <a class="btn btn-secondary" asp-controller="Admin" asp-action="Index">⬅ Geri Dön</a>
+</div>
+
+<style>
+    .btn-secondary{
+        margin-top:30px;
+        margin-bottom:10px;
+    }
+    :root {
+        --brand: #00008B; /* koyu mavi */
+        --brand-2: #0b49ff; /* vurgu mavisi */
+        --ink: #0f172a;
+        --muted: #6b7280;
+        --bg: #fafafa;
+        --card: #ffffff;
+        --line: #e5e7eb;
+    }
+
+    /* Sayfa genel */
+    body {
+        background: var(--bg);
+        color: var(--ink);
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: .2px;
+        margin-bottom: 1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: .6rem;
+    }
+
+        h1::after {
+            content: "";
+            display: inline-block;
+            width: 56px;
+            height: 4px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--brand), var(--brand-2));
+        }
+
+    /* Geri dön butonu */
+    .btn.btn-secondary {
+        background: var(--brand);
+        border-color: var(--brand);
+        color: #fff;
+        font-weight: 600;
+        padding: .55rem 1rem;
+        border-radius: .9rem;
+        transition: transform .12s ease, box-shadow .12s ease, background .2s;
+    }
+
+        .btn.btn-secondary:hover {
+            background: var(--brand-2);
+            border-color: var(--brand-2);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(11,73,255,.18);
+        }
+
+    /* Masa kutusu */
+    .table {
+        width: 100%;
+        background: var(--card);
+        border-collapse: separate !important;
+        border-spacing: 0;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 24px rgba(15,23,42,.06);
+    }
+
+        /* Başlık */
+        .table thead th {
+            background: linear-gradient(0deg, #f7f9ff, #ffffff);
+            color: var(--brand);
+            font-weight: 700;
+            border-bottom: 1px solid var(--line);
+            padding: .9rem .9rem;
+            white-space: nowrap;
+        }
+
+        /* Hücreler */
+        .table tbody td {
+            padding: .85rem .9rem;
+            vertical-align: middle;
+            border-bottom: 1px solid var(--line);
+            color: #1f2937;
+        }
+
+        /* Zebra + hover */
+        .table tbody tr:nth-child(even) {
+            background: #fbfbfd;
+        }
+
+        .table tbody tr:hover {
+            background: #f2f6ff;
+        }
+
+        /* Uzun metinler (Ingredients, ImageUrl) taşmasın */
+        .table td:nth-child(2),
+        .table td:nth-child(3) {
+            max-width: 420px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        /* Kcal sütunu daha dar */
+        .table td:nth-child(4) {
+            width: 120px;
+        }
+
+        /* IsActive için chip stili (True/False yazısını güzelleştirir) */
+        .table td:nth-child(5) {
+            width: 110px;
+        }
+
+        .table td:nth-child(5) {
+            font-weight: 700;
+        }
+
+            .table td:nth-child(5):has(> *) {
+                /* Razor DisplayFor içerise yerleştirirse yine çalışır */
+            }
+
+        .table tbody tr td:nth-child(5) {
+            /* True/False yazısını badge gibi göster */
+        }
+
+        .table tbody tr td:nth-child(5) {
+            position: relative;
+            padding-right: 0.9rem;
+        }
+
+            .table tbody tr td:nth-child(5)::before {
+                content: attr(data-badge);
+                /* data-badge gelmezse fallback olarak metnin kendisi kalır */
+            }
+
+        .table tbody tr td:nth-child(5) {
+            display: inline-block;
+            background: #eef6ff;
+            color: #0b3dff;
+            border: 1px solid #d6e4ff;
+            padding: .25rem .6rem;
+            border-radius: 999px;
+            font-size: .85rem;
+        }
+
+        /* CreatedAt daha soluk */
+        .table td:nth-child(6) {
+            color: var(--muted);
+        }
+
+        /* Meal Id chip */
+        .table td:nth-child(7) {
+            width: 100px;
+        }
+
+        .table td:nth-child(7) {
+            display: inline-block;
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #e2e8f0;
+            padding: .25rem .55rem;
+            border-radius: 10px;
+            font-size: .85rem;
+            text-align: center;
+        }
+
+        /* Aksiyon linkleri */
+        .table td:last-child {
+            white-space: nowrap;
+            width: 140px;
+        }
+
+            .table td:last-child a {
+                text-decoration: none;
+                font-weight: 600;
+                padding: .3rem .55rem;
+                border-radius: .6rem;
+                border: 1px solid transparent;
+                transition: all .15s ease;
+            }
+
+                .table td:last-child a[href*="Update"] {
+                    color: #0b49ff;
+                    border-color: #d6e4ff;
+                    background: #f4f7ff;
+                }
+
+                    .table td:last-child a[href*="Update"]:hover {
+                        background: #e8eeff;
+                        transform: translateY(-1px);
+                    }
+
+                .table td:last-child a[href*="Delete"] {
+                    color: #b91c1c;
+                    border-color: #fde2e2;
+                    background: #fff5f5;
+                }
+
+                    .table td:last-child a[href*="Delete"]:hover {
+                        background: #ffe8e8;
+                        transform: translateY(-1px);
+                    }
+
+    /* Responsive */
+    @@media (max-width: 992px) {
+        .table td:nth-child(2),
+        .table td:nth-child(3) {
+            max-width: 240px;
+        }
+    }
+
+    @@media (max-width: 640px) {
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        .btn.btn-secondary {
+            padding: .5rem .8rem;
+        }
+
+        .table thead th {
+            font-size: .9rem;
+        }
+
+        .table tbody td {
+            font-size: .9rem;
+        }
+    }
+
+</style>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ingredients)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kcal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Meal)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredients)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kcal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Meal.Id)
+            </td>
+            <td>
+                    <a asp-action="Update" asp-route-id="@item.Id">Düzenle</a>
+                    |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

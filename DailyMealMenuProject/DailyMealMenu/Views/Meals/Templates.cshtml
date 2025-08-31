@@ -1,0 +1,42 @@
+﻿@model IEnumerable<DailyMealMenu.Models.MenuTemplate>
+@{
+    ViewData["Title"] = "Menüler";
+}
+<h2>Kaydedilmiş Menüler</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Başlık</th>
+            <th>Kaydedilme Tarihi</th>
+            <th style="width:180px">İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in Model)
+        {
+            <tr>
+                <td>@t.Title</td>
+                <td>@t.CreatedAt.ToString("dd.MM.yyyy HH:mm")</td>
+                <td>
+                    <button class="btn btn-sm btn-primary" onclick="copyTemplate(@t.Id)">Kopyala</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        async function copyTemplate(id){
+          const res = await fetch(`/Meals/GetTemplateItems/${id}`);
+          if(!res.ok){
+              alert("Şablon alınamadı.");
+              return;
+          }
+          const items = await res.json();
+          localStorage.setItem("menuTemplate", JSON.stringify(items));
+          window.location.href = "/Yemek/YemekEkle"; // YemekEkle sayfana yönlendir
+        }
+    </script>
+}

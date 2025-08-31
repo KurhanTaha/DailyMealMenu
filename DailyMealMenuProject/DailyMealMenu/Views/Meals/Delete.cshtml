@@ -1,0 +1,24 @@
+﻿@model DailyMealMenu.Models.MealListItemVm
+@{
+    ViewData["Title"] = "Menü Sil";
+}
+
+<h2>Menü Sil</h2>
+<p><b>@Model.Date.ToString("dd.MM.yyyy")</b> tarihli menüyü silmek istediğinize emin misiniz?</p>
+
+<ul>
+    <li>Çorba: @Model.SoupsCount</li>
+    <li>Ana Yemek: @Model.MainDishesCount</li>
+    <li>Tatlı: @Model.DessertsCount</li>
+    <li>Salata: @Model.SaladsCount</li>
+    <li>Başlangıç: @Model.StartersCount</li>
+    <li>Diğer: @Model.OthersCount</li>
+    <li><b>Toplam: @Model.TotalCount</b></li>
+</ul>
+
+<form asp-action="Delete" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Evet, Sil</button>
+    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+</form>
